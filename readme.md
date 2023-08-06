@@ -16,8 +16,8 @@ Zur Ausführung können die folgenden Schritte durchgeführt werden:
 
 1. Klonen des Repository auf den lokalen Rechner:
 ````
-git clone https://github.com/dschmtz/reinforcement-learning-semester6.git
-cd reinforcement-learning-semester6
+git clone https://github.com/dschmtz/Abgabe-3-DQN.git
+cd Abgabe-3-DQN-main
 ````
 
 2. Installieren von erforderlichen Abhängigkeiten. Es wird empfohlen, eine virtuelle Umgebung einzurichten, um Konflikte zu vermeiden:
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ## Umgebung
 
-Die Reinforcement Learning Umgebung ist Teil der Box2D-Umgebungen der gymnasium-Bibliothek und simuliert ein Rennspiel aus der Vogelperspektive. Die generierte Rennstrecke ändert sich in jeder Episode zufällig. 
+Die Reinforcement Learning Umgebung ist Teil der Box2D-Umgebungen der gymnasium-Bibliothek und simuliert ein Rennspiel aus der Vogelperspektive. 
 - Der Aktionsraum in der Umgebung kann kontinuierlich oder diskret sein. Im kontinuierlichen Fall gibt es drei Aktionen: Lenken (von -1 für volle Linkskurve bis +1 für volle Rechtskurve), Gas geben und Bremsen. In der Implementierung wird dieser in einen diskreten Aktionsraum mit 12 möglichen Aktionen umgewandelt. 
 - Als Observationen werden RGB-Bilder (96x96 Pixel) aus einer top-down Perspektive von dem Auto und der Rennstrecke generiert.
 - Die Belohnung beträgt -0,1 in jedem Frame und +1000/N für jede befahrene Tile der Rennstrecke, wobei N die Gesamtzahl der befahrene Tiles auf der Rennstrecke ist. Zum Beispiel beträgt die Belohnung für einen Abschluss in 732 Frames 1000 - 0,1 * 732 = 926,8 Punkte.
