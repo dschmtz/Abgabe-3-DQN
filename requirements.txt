@@ -1,0 +1,8 @@
+numpy
+matplotlib
+opencv-contrib-python
+swig
+gymnasium
+gym[box2d]
+tensorflow
+pandas
